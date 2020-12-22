@@ -38,8 +38,14 @@ namespace UsefulMethods
 
 
             //*************Regular expression **********************
-            RegularExpressionExample r = new RegularExpressionExample();
-            r.CheckForValidation();
+            //RegularExpressionExample r = new RegularExpressionExample();
+            //r.CheckForValidation();
+
+
+            //*************Switch expression**********************
+            //SwitchExpression s = new SwitchExpression();
+            //s.DoSwitch();
+
 
             Console.ReadKey();
         }

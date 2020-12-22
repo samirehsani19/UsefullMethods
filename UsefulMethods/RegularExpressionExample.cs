@@ -42,31 +42,37 @@ namespace UsefulMethods
             //       a a (duplicates 'a') at position 66
 
 
+            /*   
+                \w It is used to match an alphanumeric character plus "_".
+                \W It is used to match any non-word character.
+                () It is used to group expressions.
+                {} It is used to match the preceding character for a specified number of times.
+                i) {n} Matches the previous element exactly n times.
+                ii) {n,m} Matches the previous element at least n times, but no more than m times.
+                +  Matches the preceding character 1 or more times.
+                $ It is used to match the end of a string.
+                (Dot)  Matches any character only once.
+                \d  It is used to match a digit character.
+                \D  It is used to match any non-digit character.
+                *  Matches the preceding character zero or more times.
+                The ^ symbol is used to specify not condition.
+                the [] brackets if we are to give range values such as 0 - 9 or a-z or A-Z
+                "*" matches 0 or more patterns
+                "?" matches single character
+                "^" for ignoring matches.
+                "[]" for searching range patterns. 
+                ^ asserts that the regular expression must match at the beginning of the subject
+                [] is a character class - any character that matches inside this expression is allowed
+                A-Z allows a range of uppercase characters
+                a-z allows a range of lowercase characters
+                . matches a period rather than a range of characters
+                \s matches whitespace (spaces and tabs)
+                _ matches an underscore
+                - matches a dash (hyphen); we have it as the last character in the character class so it doesn't get interpreted as being part of a character range. We could also escape it (\-) instead and put it anywhere in the character class, but that's less clear
+                + asserts that the preceding expression (in our case, the character class) must match one or more times
+                $ Finally, this asserts that we're now at the end of the subject  
 
-
-
-
-
-
-
-
-
-
-}
-
-
-        /*  
-            ^ asserts that the regular expression must match at the beginning of the subject
-            [] is a character class - any character that matches inside this expression is allowed
-            A-Z allows a range of uppercase characters
-            a-z allows a range of lowercase characters
-            . matches a period rather than a range of characters
-            \s matches whitespace (spaces and tabs)
-            _ matches an underscore
-            - matches a dash (hyphen); we have it as the last character in the character class so it doesn't get interpreted as being part of a character range. We could also escape it (\-) instead and put it anywhere in the character class, but that's less clear
-            + asserts that the preceding expression (in our case, the character class) must match one or more times
-            $ Finally, this asserts that we're now at the end of the subject  
-         
-         */
+             */
+        }
     }
 }
