@@ -13,7 +13,7 @@ namespace UsefulMethods
             var data = d.GetData();
 
             //Example 1
-            var person1 = data.FirstOrDefault(x =>x.Name=="Samir");
+            var person1 = data.FirstOrDefault(x => x.Name == "Samir");
             person1.SayWelcome();  //Extension method pop up like linq method for example where and select and so on
 
             //Example 2
@@ -29,7 +29,7 @@ namespace UsefulMethods
         }
 
     }
-    public static class Extensions 
+    public static class Extensions
     {
         public static void SayWelcome(this Data data) //must have this keyword on the first type, 
         {
@@ -53,7 +53,7 @@ namespace UsefulMethods
         public static void GetAverageSalay(this List<Data> data)
         {
             var count = data.Count();
-            int totalSalaries = data.Select(x=> x.Salary).Aggregate((a, b) => a + b);
+            int totalSalaries = data.Select(x => x.Salary).Aggregate((a, b) => a + b);
             int result = totalSalaries / count;
             Console.WriteLine($"Average salary is: \t {result.ToString("C0", CultureInfo.CurrentCulture)}");
         }

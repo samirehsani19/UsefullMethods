@@ -15,7 +15,7 @@ namespace UsefulMethods
             //How much does Samir earn in one year?
             var samir = data.FirstOrDefault(x => x.Name == "Samir");
 
-            Func<int, int> GetAnnualSalary = s => s * 12;  
+            Func<int, int> GetAnnualSalary = s => s * 12;
             var salary = GetAnnualSalary(samir.Salary);                 //C0: 420 000, 000. remove last 3 zeros
             Console.WriteLine($"Samir earn each year: \t {salary.ToString("C0", CultureInfo.CurrentCulture)}");
 

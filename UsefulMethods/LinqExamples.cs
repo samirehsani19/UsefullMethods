@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace UsefulMethods
 {
@@ -26,7 +24,7 @@ namespace UsefulMethods
             var data = d.GetData();
 
             var query = from em in data
-                       group em by em.Gender;
+                        group em by em.Gender;
 
             foreach (var item in query)
             {
@@ -44,7 +42,7 @@ namespace UsefulMethods
 
             foreach (var item in query)
             {
-                Console.WriteLine("{0}: {1}", item.Key, item.Count()); 
+                Console.WriteLine("{0}: {1}", item.Key, item.Count());
                 Console.WriteLine("--------------------");
                 foreach (var i in item)
                 {
@@ -53,33 +51,33 @@ namespace UsefulMethods
                 Console.WriteLine();
             }
 
-                /*output:
-                 
-                developer: 2
-                --------------------
-                Samir   developer
-                David   developer
+            /*output:
 
-                Designer: 3
-                --------------------
-                Jan     Designer
-                Mike    Designer
-                Emma    Designer
+            developer: 2
+            --------------------
+            Samir   developer
+            David   developer
 
-                Tester: 2
-                --------------------
-                Hanna   Tester
-                Ali     Tester
+            Designer: 3
+            --------------------
+            Jan     Designer
+            Mike    Designer
+            Emma    Designer
 
-                Manager: 1
-                --------------------
-                Musse   Manager
+            Tester: 2
+            --------------------
+            Hanna   Tester
+            Ali     Tester
 
-                Scrum master: 1
-                --------------------
-                Angela  Scrum master
-                    
-                                       */
+            Manager: 1
+            --------------------
+            Musse   Manager
+
+            Scrum master: 1
+            --------------------
+            Angela  Scrum master
+
+                                   */
         }
 
         internal void GoupByMultiple()
@@ -104,7 +102,7 @@ namespace UsefulMethods
                 {
                     Profession = e.Key.Profession,
                     Gender = e.Key.Gender,
-                    Employees = e.OrderBy(x=>x.Name)
+                    Employees = e.OrderBy(x => x.Name)
                 });
 
 

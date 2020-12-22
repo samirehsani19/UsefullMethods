@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace UsefulMethods
 {
@@ -12,7 +10,7 @@ namespace UsefulMethods
             //example 1
             //add 10 to num and print 20
             int num = 10;
-            GetResut(ref num); 
+            GetResut(ref num);
             Console.WriteLine(num); //20: 
 
             //Example 2
@@ -20,7 +18,7 @@ namespace UsefulMethods
             var d = new Data();
             var data = d.GetData();
 
-            var salary = data.FirstOrDefault(x => x.Name=="Samir").Salary;
+            var salary = data.FirstOrDefault(x => x.Name == "Samir").Salary;
             IncreaseSalary(ref salary);
             Console.WriteLine($"samir's salary is: {salary}");
         }
@@ -32,7 +30,7 @@ namespace UsefulMethods
 
         private void GetResut(ref int num)
         {
-           num += 10; // we have num and it's reference so any changes to num will effect the variable. 
+            num += 10; // we have num and it's reference so any changes to num will effect the variable. 
         }
 
         internal void OutExample()
@@ -57,7 +55,7 @@ namespace UsefulMethods
         private void DoMultiply(out int x)
         {
             x = 2; // you are forced to give a value to x , the old value will be overriten.
-            x *= 5; 
+            x *= 5;
         }
 
         internal void ParamsExample() //useful when you have multiple parameters
@@ -69,7 +67,7 @@ namespace UsefulMethods
 
         private void Add(params int[] values)
         {
-            int result= 0;
+            int result = 0;
             foreach (var item in values)
             {
                 result = result + item;
