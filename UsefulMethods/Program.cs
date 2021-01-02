@@ -44,6 +44,7 @@ namespace UsefulMethods
 
             //*************Switch expression**********************
             //SwitchExpression s = new SwitchExpression();
+            //Console.WriteLine(s.SwitchMultipleCases);
             //s.DoSwitch();
 
 
