@@ -1,4 +1,5 @@
 ﻿using System;
+using static UsefulMethods.GenericType;
 
 namespace UsefulMethods
 {
@@ -46,6 +47,15 @@ namespace UsefulMethods
             //SwitchExpression s = new SwitchExpression();
             //Console.WriteLine(s.SwitchMultipleCases);
             //s.DoSwitch();
+
+            Person p = new Person {Name="Hanna", Age=20 };
+           
+            GenericType g = new GenericType();
+            g.GetType(p);   // Display Person
+
+            g.DisplayName(p); // display Hanna
+
+            g.AddToList(p);// Display 1
 
 
             Console.ReadKey();
